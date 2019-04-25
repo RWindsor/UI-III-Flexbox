@@ -2,6 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,82 +67,109 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-body {
-	margin: 30px;
-  }
-  
-  nav a{
-	text-decoration: none;
+/* Your code starts here! */
+
+body{
+  margin: 20px;
+}
+
+.container{
+	width: 880px;
+	margin: auto;
+}
+
+header {
+	padding: 20px 20px 20px;
+}
+
+h1{
+  font-size: 25px;
+}
+
+nav {
+	display: inline-flex;
+	width: 75%;
+}
+nav a {
 	color: grey;
-	display: flex;
-	justify-content: space-evenly;
-	padding: 10px;
-  }
-  header, .logo, nav{
-	display: flex;
-	justify-content: center;
-	
-  }
-  
-  .logo{
-   padding-left: 20px;
-  }
-  
-  .header-img{
-	float: right;
-  }
-  
-  
-  .main-content, .header-img{
-	display: inline-flex;
-	flex-direction: column; 
-	margin: 40px;
-  }
-  
-  .header-img{
-	width: 250px;
-  }
-  
-  .main-content h1{
-	font-size: 70px;  
+	text-decoration: none;
+	padding: 0 25px 0px;
+}
+
+/* .intro-container {
 	text-align: center;
-  }
-  
-  .main-content p{
-	border: 1px solid black;
-	padding: 12px;
-	width: 105px;
-  }
-  
-  .features, .about{
+	/* border: 3px solid green;
+}
+ */
+
+.container-1 {
+	/* border: 4px dashed red; */
+/* 	display: inline-block; */
+/* 	width: 450px; */
+	padding: 0px, 40px;
+ 
+}
+
+.services{
+  margin: 20px;
+}
+
+.container-2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.content {
 	width: 45%;
-	display: inline-flex;
-	flex-direction: column;
-	margin: 10px;
-	
-  } 
-  
-  .middle-img{
-	overflow: hidden;
-	padding: 10px;
-	width: 95%;
-  }
-  
-  .services, .product, .vision{
-	display: inline-flex;
-	flex-direction: column;
-	padding: 10px;
-	width: 33%;
-  }
-  
-  footer p, h3{
-	dipslay: flex;
-	width: 25%;
-	padding: 10px;
-  }
-  
-  footer{
+	display: flex;
+  flex-direction: column;
+	padding: 20px 10px 10px 20px;
+  margin: 10px;
+  border: 1px solid black;
+  background: #e6e6e6;
+}
+
+.button {
+	padding: 5px 40px 5px;
+	border: 1px solid black;
+  border-radius: 8px;
+	font-family: 'Titillium Web';
+  display: flex;
+  width: 165px;
+  background-color: white;
+  margin: 10px;
+}
+
+header p {
 	text-align: center;
-  }
-  
+	border: 1px solid black;
+	width: 150px;
+}
+
+.container-3{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-3 p{
+  padding: 10px;
+}
+
+.container-3 ul{
+  list-style-type: square;
+  padding: 10px;
+  margin: 5px;
+}
+
+.container-3 li{
+  padding: 3px;
+}
+
+footer p {
+	text-align: center;
+  padding: 10px;
+}
